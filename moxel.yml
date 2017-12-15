@@ -1,6 +1,6 @@
 name: lanedetection
 tag: latest
-image: python3
+image: py3-tf-0.11
 resources:
   memory: 512Mi
   cpu: "1"
