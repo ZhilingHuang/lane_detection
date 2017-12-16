@@ -1,6 +1,6 @@
 name: lanedetection
 tag: latest
-image: docker-python3-opencv
+image: python3
 resources:
   memory: 512Mi
   cpu: "1"
@@ -8,6 +8,8 @@ input_space:
   img: image
 output_space:
   out: image
+setup:
+- pip install opencv-python
 main:
   type: python
   entrypoint: serve.py::predict
