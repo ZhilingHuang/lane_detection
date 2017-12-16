@@ -8,6 +8,8 @@ input_space:
   img: image
 output_space:
   out: image
+setup:
+- pip install opencv-python
 main:
   type: python
   entrypoint: serve.py::predict
