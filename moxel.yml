@@ -2,7 +2,7 @@ name: lanedetection
 tag: latest
 image: python3
 resources:
-  memory: 512Mi
+  memory: 1Gi
   cpu: "1"
 input_space:
   img: image
